@@ -83,7 +83,7 @@ task_list = tk.Listbox(
 )
 task_list.place(x=20, y=90)
 
-# ---------- Buttons (Centered Vertically) ----------
+# ---------- Buttons ----------
 button_style = {
     "font": ("Arial", 12, "bold"),
     "width": 16,
@@ -91,7 +91,7 @@ button_style = {
     "cursor": "hand2"
 }
 
-button_start_y = 120   # shifted down for vertical alignment
+button_start_y = 120   
 button_gap = 50
 
 tk.Button(main_frame, text="Add Task", bg="#4caf50", fg="white",
@@ -110,3 +110,4 @@ tk.Button(main_frame, text="Exit", bg="#9e9e9e", fg="white",
           command=exit_app, **button_style).place(x=380, y=button_start_y + 4 * button_gap)
 
 root.mainloop()
+
